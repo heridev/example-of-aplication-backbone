@@ -1,1 +1,6 @@
-This text is mada by backbone.js
+<h1>The Container</h1>
+<form id= "new_entry">
+  <input type= "text" name= "name" id="new_entry_name">
+  <input type = "submit" value= "add">
+</form>
+<ul id ="entries"></ul>
