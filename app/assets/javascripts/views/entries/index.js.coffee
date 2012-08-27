@@ -18,7 +18,18 @@ class BackboneApp.Views.EntriesIndex extends Backbone.View
     view = new BackboneApp.Views.Entry(model: entry)
     $('#entries').append(view.render().el)
 
-  createEntry: (event)->
+  createEntry: (event) =>
     event.preventDefault()
-    @collection.create name: $('#new_entry_name').val()
-    $('#new_entry_name').val('')
+    attributes = name: $('#new_entry_name').val()
+    @collection.create attributes,
+      wait: true
+      success: -> $('#new_entry')[0].reset()
+      error: @handleError
+
+  handleError: (entry, response) ->
+    if response.status == 422
+      errors = $.parseJSON(response.responseText).errors
+      for attribute, messages of errors
+        alert "#{attribute} #{messages}" for message in messages
+
+
