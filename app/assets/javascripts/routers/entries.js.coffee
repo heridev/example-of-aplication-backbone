@@ -4,7 +4,8 @@ class BackboneApp.Routers.Entries extends Backbone.Router
     'entries/:id': 'show'
 
   index: ->
-    alert 'hello to home page'
+    view = new BackboneApp.Views.EntriesIndex()
+    $('#container').html(view.render().el)
 
   show:(id) ->
-    alert 'hello #{id}'
+    alert "hello #{id}"
