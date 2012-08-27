@@ -3,7 +3,9 @@ window.BackboneApp =
   Collections: {}
   Views: {}
   Routers: {}
-  init: -> alert 'Hello from Backbone!'
+  init: ->
+    new BackboneApp.Routers.Entries()
+    Backbone.history.start()
 
 $(document).ready ->
   BackboneApp.init()
