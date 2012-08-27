@@ -4,7 +4,6 @@ class BackboneApp.Routers.Entries extends Backbone.Router
     'entries/:id': 'show'
 
   index: ->
-    console.log 'algo'
     alert 'hello to home page'
 
   show:(id) ->
