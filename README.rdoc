@@ -1,10 +1,13 @@
 ##How to use the Repo and install in local
 
-    $ git clone git@github.com:crowdint/retrospectus.git
-    $ cd retrospectus
+    $ git clone git@github.com:heridev/example-of-aplication-backbone.git
+    $ cd example-of-aplication-backbone
     $ bundle install
     $ rake db:create
     $ rake db:migrate
     $ rake db:seed
     $ git add .
     $ git commit -m "Initialize git repository in local"
+
+To see how we create the aplication read the next post.
+
