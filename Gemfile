@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
 gem 'haml'
-gem 'backbone-on-rails'
+gem 'backbone-on-rails', '>= 0.9.2.1'
 gem 'sass'
 gem 'rb-readline'
 
@@ -24,7 +24,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 2.2.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
