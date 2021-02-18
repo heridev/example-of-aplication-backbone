@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.6'
+gem 'rails', '6.0.3.5'
 gem 'haml'
 gem 'backbone-on-rails'
 gem 'sass'
